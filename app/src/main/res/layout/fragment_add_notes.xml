@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".fragments.AddNotesFragment">
+
+
+    <com.codeninjas.bowwow.utils.CustomTvMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:id="@+id/titleTV"
+        android:text="@string/title"/>
+
+    <com.codeninjas.bowwow.utils.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:layout_below="@+id/titleTV"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:hint="@string/title"
+        android:id="@+id/titleET"/>
+
+    <com.codeninjas.bowwow.utils.CustomTvMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:id="@+id/noteTV"
+        android:layout_below="@+id/titleET"
+        android:layout_marginTop="10dp"
+        android:text="@string/notes"/>
+
+    <com.codeninjas.bowwow.utils.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:layout_below="@+id/noteTV"
+        android:layout_marginTop="5dp"
+        android:minLines="5"
+        android:gravity="start"
+        android:layout_above="@+id/deleteBT"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        android:hint="@string/title"
+        android:id="@+id/notesET"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/saveBT"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/gray_button_bg"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:id="@+id/deleteBT"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/saveBT"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:background="@drawable/gray_button_bg"/>
+
+</RelativeLayout>

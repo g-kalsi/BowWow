@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:screenOrientation">portrait</item>
+        <!-- specify enter and exit transitions -->
+
+        <item name="android:windowSoftInputMode">stateHidden</item>
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Toolbar_popup" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="queryBackground">@color/colorAccent</item>
+    </style>
+
+    <style name="AppNormalTextViewStyle">
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textSize">@dimen/normal_textView_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="AppHeadingTextViewStyle">
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textSize">@dimen/heading_textView_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+<!--    <style name="spinner_style2">-->
+<!--        <item name="android:textSize">@dimen/_12sdp</item>-->
+<!--        <item name="android:paddingBottom">12dp</item>-->
+<!--        <item name="android:paddingTop">12dp</item>-->
+<!--        <item name="android:background">@drawable/gradient_spinner2</item>-->
+<!--        <item name="android:textColor">@color/whiteColor</item>-->
+<!--        <item name="android:ellipsize">marquee</item>-->
+<!--    </style>-->
+<!--    <style name="spinner_style">-->
+<!--        <item name="android:textSize">@dimen/_12sdp</item>-->
+<!--        <item name="android:paddingBottom">@dimen/_8sdp</item>-->
+<!--        <item name="android:paddingTop">@dimen/_8sdp</item>-->
+<!--        <item name="android:background">@drawable/gradient_spinner</item>-->
+<!--        <item name="android:textColor">@color/whiteColor</item>-->
+<!--        <item name="android:ellipsize">marquee</item>-->
+<!--    </style>-->
+
+<!--    <style name="Widget.Design.TabLayout.tabLayout" parent="Widget.Design.TabLayout">-->
+<!--        <item name="tabBackground">@drawable/tab_background</item>-->
+<!--    </style>-->
+    <style name="transparent_dialog_borderless" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="dialogAnimation" parent="AppTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+</resources>

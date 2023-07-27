@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".fragments.AddFeedFragment">
+
+    <com.codeninjas.bowwow.utils.CustomTvMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/infoIV"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:layout_marginEnd="10dp"
+        android:textSize="16dp"
+        android:text="Upload the dog's picture:"/>
+
+    <RelativeLayout
+        android:id="@+id/imageRL"
+        android:layout_width="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/subTitleTV">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:id="@+id/imageIV"
+            android:layout_height="150dp"
+            android:src="@drawable/dog" />
+
+        <com.codeninjas.bowwow.utils.CustomTvLight
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/editImageTV"
+            android:layout_alignParentBottom="true"
+            android:background="#80000000"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="Edit"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/lostRB"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:text="Lost"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/foundRB"
+            android:layout_marginStart="10dp"
+            android:text="Found"/>
+
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.codeninjas.bowwow.utils.CustomTvMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/infoIV"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            android:textSize="16dp"
+            android:text="Write detailed characterstics of the dog:"/>
+
+        <ImageView
+            android:id="@+id/infoIV"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/info_icon"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_bg"
+        android:gravity="start"
+        android:padding="10dp"
+        android:id="@+id/reportET"
+        android:textSize="16dp"
+        android:hint="Write your report here... "
+        android:textColor="@color/Black"
+        android:minLines="6"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_button_bg"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/uploadBT"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_marginVertical="20dp"
+            android:text="Upload Report"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

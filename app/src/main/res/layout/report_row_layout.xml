@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileCIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/dog"
+                app:civ_border_width="0dp" />
+
+            <com.codeninjas.bowwow.utils.CustomBoldTV
+                android:id="@+id/userNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/profileCIV"
+                android:text="Sadie"
+                android:textSize="12dp" />
+
+            <com.codeninjas.bowwow.utils.CustomTvLight
+                android:id="@+id/timeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userNameTV"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/profileCIV"
+                android:text="4 min"
+                android:textSize="10dp" />
+
+            <com.codeninjas.bowwow.utils.CustomTvMedium
+                android:id="@+id/typeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/tips_text_bg"
+                android:padding="2dp"
+                android:text="Lost"
+                android:textColor="@color/red"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/pictureIV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/linearLayout"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dog" />
+
+        <com.codeninjas.bowwow.utils.CustomTvLight
+            android:id="@+id/reportTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pictureIV"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/black"
+            android:text="They think, They are surrounded with great people\nBut they don't know they are with fake people\nMaybe its, like attracts like\nOr maybe, they love to bait people." />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:id="@+id/deleteBT"
+            android:textSize="20dp"
+            android:layout_below="@+id/reportTV"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:background="@drawable/gray_button_bg"
+            android:layout_alignParentBottom="true"
+            android:text="Delete"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

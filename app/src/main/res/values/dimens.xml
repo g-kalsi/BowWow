@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="edit_text_padding">16dp</dimen>
+    <dimen name="normal_textView_size">16dp</dimen>
+    <dimen name="buttonTextSize">18dp</dimen>
+    <dimen name="heading_textView_size">22dp</dimen>
+    <dimen name="login_signup_margin_start">16dp</dimen>
+    <dimen name="login_signup_margin_end">16dp</dimen>
+    <dimen name="button_text_size">20dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+    <dimen name="radius">10dp</dimen>
+
+
+</resources>

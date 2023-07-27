@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "793057848299",
+    "project_id": "bowwow-8f417",
+    "storage_bucket": "bowwow-8f417.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793057848299:android:913c6435c3ea54d02307ae",
+        "android_client_info": {
+          "package_name": "com.codeninjas.bowwow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793057848299-n9fclvvv9g5riinl91bo9mh4m7vop9u1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaGMHhkrRbRhTTGKWmbuo9gLJupTZrAfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793057848299-n9fclvvv9g5riinl91bo9mh4m7vop9u1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <com.codeninjas.bowwow.utils.CustomTvMedium
+                android:id="@+id/titleTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/closeIV"
+                android:layout_marginEnd="10dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="Doctor Appointment"/>
+
+            <ImageView
+                android:id="@+id/closeIV"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_close"
+                android:layout_alignParentEnd="true"
+                app:tint="@color/black"/>
+
+            <com.codeninjas.bowwow.utils.CustomTvLight
+                android:layout_width="match_parent"
+                android:layout_below="@+id/titleTV"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:id="@+id/messageTV"
+                android:text="Don't forget your appointment with doctor around 2 pm"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

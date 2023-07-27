@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">BowWow</string>
+
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="verify">Verify</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="resend_sms">Resend</string>
+    <string name="are_you_sure_to_exit">Are you sure, you want to exit?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="you_may_start_your_feed_by_writing_about_your_dog_hi_i_m_sadie_a_golden_retriever">You may start your feed by writing about your dog... \"Hi, I\'m Sadie a golden retriever...\"</string>
+    <string name="do_you_want_to_keep_your_feed_private">Do you want to keep your feed private:</string>
+    <string name="what_kind_of_feed_you_want_to_upload">What kind of feed you want to upload:</string>
+    <string name="set_up_your_dog_s_profile">Set up your Dog\'s profile</string>
+    <string name="reports">Reports</string>
+    <string name="feeds">Feeds</string>
+    <string name="no_reports_found">No reports found!</string>
+    <string name="no_feeds_found">No feeds found!</string>
+    <string name="title">Title</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="no_notes_found">No Notes found!</string>
+    <string name="delete">Delete</string>
+</resources>

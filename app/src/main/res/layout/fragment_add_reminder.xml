@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".fragments.AddReminderFragment">
+
+    <com.codeninjas.bowwow.utils.CustomTvMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select reminder type:"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <Spinner
+        android:id="@+id/appointmentSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spinner_bg"
+        android:padding="10dp" />
+
+    <com.codeninjas.bowwow.utils.CustomTvMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select Date:"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <com.codeninjas.bowwow.utils.CustomTvLight
+        android:id="@+id/dateTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Select date"
+        android:padding="10dp" />
+
+    <com.codeninjas.bowwow.utils.CustomTvMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select Time:"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <com.codeninjas.bowwow.utils.CustomTvLight
+        android:id="@+id/timeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Select time"
+        android:padding="10dp" />
+
+    <com.codeninjas.bowwow.utils.CustomTvMedium
+        android:id="@+id/addressTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Where it is?"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/addressET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Enter address"
+        android:padding="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createBT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gray_button_bg"
+            android:text="Create"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

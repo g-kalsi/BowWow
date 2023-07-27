@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".fragments.AddFeedFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.codeninjas.bowwow.utils.CustomTvMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/infoIV"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            android:textSize="16dp"
+            android:text="@string/what_kind_of_feed_you_want_to_upload"/>
+
+        <ImageView
+            android:id="@+id/infoIV"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/info_icon"/>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/storyRB"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:text="Story"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tipsRB"
+            android:layout_marginStart="10dp"
+            android:text="Tips"/>
+
+
+    </RadioGroup>
+
+    <com.codeninjas.bowwow.utils.CustomTvMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="Write down your feed below:"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_bg"
+        android:gravity="start"
+        android:padding="10dp"
+        android:id="@+id/feedET"
+        android:textSize="16dp"
+        android:hint="@string/you_may_start_your_feed_by_writing_about_your_dog_hi_i_m_sadie_a_golden_retriever"
+        android:textColor="@color/Black"
+        android:minLines="6"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.codeninjas.bowwow.utils.CustomTvMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:text="@string/do_you_want_to_keep_your_feed_private"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/privateSW"
+            android:track="@drawable/custom_switch_track"
+            android:thumb="@drawable/custom_switch_thumb"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_button_bg"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/uploadBT"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_marginVertical="20dp"
+            android:text="Upload Feed"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

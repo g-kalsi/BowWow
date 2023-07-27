@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MyReportsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reportsRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="10"
+        tools:listitem="@layout/report_row_layout" />
+
+    <com.codeninjas.bowwow.utils.MovableFloatingActionButton
+        android:id="@+id/addFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:foregroundTint="@color/white"
+        android:src="@drawable/add_icon"
+        app:borderWidth="0dp"
+        app:tint="@color/white" />
+
+    <com.codeninjas.bowwow.utils.CustomTvMedium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/noReportTV"
+        android:text="@string/no_reports_found"/>
+
+</RelativeLayout>
